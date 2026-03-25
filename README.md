@@ -1,3 +1,12 @@
+## Install instructions
+1. Download BingeWatchMe-extension.zip from the release
+2. Unzip it
+3. Go to brave://extensions
+4. Enable Developer mode
+5. Click "Load unpacked"
+6. Point at the unzipped folder
+
+
 ## Legal Disclaimer
 
 This project is an independent, open-source tool and is not affiliated with,
