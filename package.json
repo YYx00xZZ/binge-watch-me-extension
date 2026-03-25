@@ -1,0 +1,26 @@
+{
+  "name": "binge-watch-me-extension",
+  "version": "1.0.0",
+  "description": "This project is an independent, open-source tool and is not affiliated with, endorsed by, or sponsored by Netflix, YouTube, or any other streaming service.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild content.js --bundle --outfile=dist/content.js --platform=browser",
+    "watch": "esbuild content.js --bundle --outfile=dist/content.js --platform=browser --watch"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YYx00xZZ/binge-watch-me-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YYx00xZZ/binge-watch-me-extension/issues"
+  },
+  "homepage": "https://github.com/YYx00xZZ/binge-watch-me-extension#readme",
+  "devDependencies": {
+    "esbuild": "^0.27.4"
+  }
+}
