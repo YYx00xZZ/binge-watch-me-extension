@@ -1,4 +1,7 @@
 ## Install instructions
+
+### 2. Load the extension
+
 1. Download BingeWatchMe-extension.zip from the release
 2. Unzip it
 3. Go to brave://extensions
@@ -6,7 +9,14 @@
 5. Click "Load unpacked"
 6. Point at the unzipped folder
 
+## 3. Connect to the daemon
 
+1. Make sure the binge-watch-me daemon is running on your Mac
+2. Click the `BWM` extension icon in your browser toolbar
+3. Click **Connect to daemon**
+4. You should see **Connected!**
+
+The extension will reconnect automatically every time the daemon starts.
 ## Legal Disclaimer
 
 This project is an independent, open-source tool and is not affiliated with,

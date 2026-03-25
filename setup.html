@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>binge-watch-me setup</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 32px;
+      width: 340px;
+      text-align: center;
+    }
+    h1 { font-size: 20px; margin-bottom: 8px; }
+    p  { font-size: 14px; color: #888; margin-bottom: 24px; }
+    button {
+      background: #e50914;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:disabled { background: #444; cursor: not-allowed; }
+    #status { margin-top: 16px; font-size: 14px; color: #888; }
+    .success { color: #1db954 !important; }
+    .error   { color: #e50914 !important; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>binge-watch-me</h1>
+    <p>Connect the extension to the daemon running on this computer.</p>
+    <button id="connect-btn">Connect to daemon</button>
+    <div id="status"></div>
+  </div>
+  <script src="setup.js"></script>
+</body>
+</html>

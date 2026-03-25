@@ -10,7 +10,8 @@
   ],
 
   "host_permissions": [
-    "*://*.netflix.com/*"
+    "*://*.netflix.com/*",
+    "http://127.0.0.1:7777/*"
   ],
 
   "action": {
@@ -19,7 +20,8 @@
       "48":  "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "binge-watch-me"
+    "default_title": "binge-watch-me",
+    "default_popup": "setup.html"
   },
 
   "background": {
