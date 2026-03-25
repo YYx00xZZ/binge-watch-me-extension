@@ -1,5 +1,13 @@
+Copyright (C) 2026  Aleksandar Parvanov
+
+binge-watch-me-extension — browser extension companion for binge-watch-me.
+Connects your browser to the binge-watch-me daemon, enabling phone-based
+media control for streaming sites.
+
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
+
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
