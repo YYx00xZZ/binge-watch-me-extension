@@ -29,14 +29,13 @@ jobs:
 
       - name: Package extension
         run: |
-          zip -r BingeWatchMe-extension.zip \
-            manifest.json \
-            background.js \
-            content.js \
-            protocol.js \
-            adapters/ \
-            dist/ \
-            icons/
+          zip -r BingeWatchMe-extension.zip . \
+            --exclude "node_modules/*" \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "*.md" \
+            --exclude "package*.json" \
+            --exclude ".gitignore"
 
       - name: Create release
         uses: softprops/action-gh-release@v1
