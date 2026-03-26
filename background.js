@@ -99,4 +99,23 @@ function sendStateToDaemon(state) {
   }
 }
 
+chrome.runtime.onInstalled.addListener(injectIntoExistingTabs);
+chrome.runtime.onStartup.addListener(injectIntoExistingTabs);
+
+async function injectIntoExistingTabs() {
+  console.log("[binge-watch-me] Injecting content script into existing tabs");
+  const tabs = await chrome.tabs.query({ url: "*://*.netflix.com/*" });
+  for (const tab of tabs) {
+    try {
+      await chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        files: ["dist/content.js"],
+      });
+      console.log(`[binge-watch-me] Injected into tab ${tab.id}`);
+    } catch (e) {
+      console.warn(`[binge-watch-me] Failed to inject into tab ${tab.id}:`, e);
+    }
+  }
+}
+
 connect();
